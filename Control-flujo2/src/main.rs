@@ -81,14 +81,20 @@ fn main() {
         }
     }
 
-    let numero = 7;
+    //let numero = 7;
 
-    println!("=== Tabla del {} ===", numero);
+    println!("=== Tabla de Multiplicar ===");
 
-    for i in 1..=12 {
-        let resultado = numero * i;
-        println!("{} x {} = {}", numero, i, resultado);
+    for h in 1..=10{
+        for i in 1..=12 {
+            let resultado = h * i;
+            println!("{} x {} = {}", h, i, resultado);
+        }
+        println!("===============================");
     }
+    
+
+
 
     
 }
