@@ -28,4 +28,66 @@ fn main() {
 
     println!("Original: {}", nombre1);
     println!("Copia: {}", nombre2);
+
+    println!("-------------------");
+    
+    //////////////TRNASFERENCIA CON STRING/////////////////////
+    let usuario = String::from("Carlos");
+    mostrar_nombre(usuario);
+    //println!("{}", usuario); // Error
+    
+    //////////////FUNCION CON COPY I32////////////////////////
+    let edad = 25;
+
+    mostrar_edad(edad);
+
+    println!("Edad original: {}", edad);
+    ///////////////////////////////////////////////////////
+
+    let texto = crear_mensaje();
+
+    println!("{}", texto);
+    //////////////////////////////////////////////////////
+
+    let mensaje = String::from("Rust");
+
+    let mensaje = devolver_texto(mensaje);
+
+    println!("Recuperado: {}", mensaje);
+    ////////////////////////////////////////
+
+    let producto = String::from("Laptop");
+
+    let respaldo = producto.clone();
+
+    let producto = registrar_producto(producto);
+
+    println!("Producto registrado: {}", producto);
+    println!("Respaldo: {}", respaldo);
+
+    
 }
+
+fn mostrar_nombre(nombre: String) {
+    println!("Nombre: {}", nombre);
+}
+
+fn mostrar_edad(edad: i32) {
+    println!("Edad: {}", edad);
+}
+
+fn crear_mensaje() -> String {
+    let mensaje = String::from("Hola Mundo");
+    mensaje
+}
+
+fn devolver_texto(texto: String) -> String {
+    println!("Procesando: {}", texto);
+    texto
+}
+
+fn registrar_producto(nombre: String) -> String {
+    println!("Registrando producto: {}", nombre);
+    nombre
+}
+

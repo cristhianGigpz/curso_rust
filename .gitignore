@@ -1,0 +1,2 @@
+# Directorios de compilación de Rust, en cualquier carpeta del proyecto.
+target/
